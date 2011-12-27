@@ -1,0 +1,11 @@
+.white {color: #fff;}
+.black {color: #000;}
+.red {color: #900;}
+.green {color: #090;}
+.blue {color: #009;}
+
+.error {color: #900;}
+
+.form_row {padding: 3px 0px;}
+
+.ieP {filter:expression(fixPNG(this));}

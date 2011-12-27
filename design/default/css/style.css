@@ -1,0 +1,11 @@
+html,body {height:100%;}
+body {margin:0;}
+body,table {
+	color: #000;
+	font:normal 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+a {color: #c0a293;}
+a:link {text-decoration: underline;}
+a:visited {text-decoration: underline;}
+a:hover {text-decoration: underline;}

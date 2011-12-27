@@ -1,0 +1,21 @@
+php_value display_errors 1
+php_value error_reporting 2047
+
+AddHandler application/x-httpd-php5 .xml
+
+AddDefaultCharset Off
+
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{QUERY_STRING} !no_rewrite=?$ [NC]
+
+RewriteCond %{REQUEST_URI} !^/(index.php|ajax.php).*$ [NC]
+RewriteCond %{REQUEST_URI} !^/supplements/ [NC]
+RewriteCond %{REQUEST_URI} !\.(js|css|gif|png|jpg|ico|swf|fla|zip|rar|doc|xls|pdf|wmv|avi|txt)$ [NC]
+
+RewriteRule ^(.*) /index.php?%{QUERY_STRING} [L]
+
+
+#RewriteCond %{HTTP_HOST} ^site.ru$
+#RewriteRule ^(.*)$ http://www.site.ru/ [R=301,L]
